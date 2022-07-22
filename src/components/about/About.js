@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
+
+import { LangContext } from "../../App";
 
 import './About.css';
 
@@ -11,64 +13,123 @@ import node from '../../assets/images/node.png';
 import webpack from '../../assets/images/webpack.png';
 import figma from '../../assets/images/figma.png';
 
-
 function About() {
-    return (
-        <div className='about-wrapper' >
-            <div className='about'>
-                <div className='header-btn' >
-                    <div className='hidden' ></div>
-                    <h2>About</h2>
-                    <a className='btn-cv' href='Lebenslauf.pdf' download='CV_Malte_Lindemann.pdf' target='_blank' >
-                        Download CV
-                    </a>
-                </div>
-                <div className='about-text' >
-                    My Name is Malte and I'm currently 25 years old. Currently im studying my masters in the 
-                    field of mechanical engineering, but with a specification of digitalization of the producing industries. 
-                    During my studies I came across C++ and C#, which inspired me to learn more about software engineering. 
-                    While diving deeper into the topic I started to like web development the most. So here I am! 
-                    Learning web development, right now focussing on the Front-End and getting more and more Experience.
-                </div>
-                <h3>Skills</h3>
-                <div className='skills' >
-                    <div>
-                        <img className='skill-img' src={html5} alt='HTML5 Icon' ></img>
-                        <div>HTML5</div>
+    const { lang, toggleLang } = useContext(LangContext);
+
+    if (lang === 'eng') {
+        return (
+           <div className='about-wrapper' >
+               <div className='about'>
+                   <div className='header-btn' >
+                       <div className='hidden' ></div>
+                       <h2>About</h2>
+                       <a className='btn-cv' href='Lebenslauf.pdf' download='CV_Malte_Lindemann.pdf' target='_blank' >
+                           Download CV
+                       </a>
+                   </div>
+                   <div className='about-text' >
+                       My Name is Malte and I'm 25 years old. Currently im studying my masters in the 
+                       field of mechanical engineering, but with a specification of digitalization of the producing industries. 
+                       During my studies I came across C++ and C#, which inspired me to learn more about software engineering. 
+                       While diving deeper into the topic I started to like web development the most. So here I am! 
+                       Learning web development, right now focussing on the Front-End and getting more and more Experience.
+                   </div>
+                   <h3>Skills</h3>
+                   <div className='skills' >
+                       <div>
+                           <img className='skill-img' src={html5} alt='HTML5 Icon' ></img>
+                           <div>HTML5</div>
+                       </div>
+                       <div>
+                           <img className='skill-img' src={css3} alt='CSS3 Icon' ></img>
+                           <div>CSS3</div>
+                       </div>
+                       <div>
+                           <img className='skill-img' src={javascript} alt='JavaScript Icon' ></img>
+                           <div>JavaScript</div>
+                       </div>
+                       <div>
+                           <img className='skill-img' src={react} alt='react Icon' ></img>
+                           <div>React</div>
+                       </div>
+                       <div>
+                           <img className='skill-img' src={jsx} alt='jsx Icon' ></img>
+                           <div>JSX</div>
+                       </div>
+                       <div>
+                           <img className='skill-img' src={node} alt='Node Icon' ></img>
+                           <div>Node</div>
+                       </div>
+                       <div>
+                           <img className='skill-img' src={webpack} alt='Webpack Icon' ></img>
+                           <div>Webpack</div>
+                       </div>
+                       <div>
+                           <img className='skill-img' src={figma} alt='Figma Icon' ></img>
+                           <div>Figma</div>
+                       </div>
+
+                   </div>
+               </div>
+           </div>
+       );
+    } else {
+        return (
+            <div className='about-wrapper' >
+                <div className='about'>
+                    <div className='header-btn' >
+                        <div className='hidden' ></div>
+                        <h2>Über mich</h2>
+                        <a className='btn-cv' href='Lebenslauf.pdf' download='CV_Malte_Lindemann.pdf' target='_blank' >
+                            Lebenslauf laden
+                        </a>
                     </div>
-                    <div>
-                        <img className='skill-img' src={css3} alt='CSS3 Icon' ></img>
-                        <div>CSS3</div>
+                    <div className='about-text' >
+                        Ich heiße Malte und bin 25 Jahre alt. Ich studiere im Master Maschinenbau an der Uni Stuttgart mit einer Vertiefung in der Digitalisierung von Produktionen. 
+                        Durch mein Studium bin ich über C++ und C# gestolpert, was mich inspiriert hat mehr über Softwareentwicklung zu lernen.
+                        Während dem tiefern Eintauchen begeisterte mich die Webentwicklung am meisten. Also hab ich mich darauf gestürzt!
+                        Mein Fokus liegt auf der Front-End Entwicklung.
                     </div>
-                    <div>
-                        <img className='skill-img' src={javascript} alt='JavaScript Icon' ></img>
-                        <div>JavaScript</div>
+                    <h3>Kompetenzen</h3>
+                    <div className='skills' >
+                        <div>
+                            <img className='skill-img' src={html5} alt='HTML5 Icon' ></img>
+                            <div>HTML5</div>
+                        </div>
+                        <div>
+                            <img className='skill-img' src={css3} alt='CSS3 Icon' ></img>
+                            <div>CSS3</div>
+                        </div>
+                        <div>
+                            <img className='skill-img' src={javascript} alt='JavaScript Icon' ></img>
+                            <div>JavaScript</div>
+                        </div>
+                        <div>
+                            <img className='skill-img' src={react} alt='react Icon' ></img>
+                            <div>React</div>
+                        </div>
+                        <div>
+                            <img className='skill-img' src={jsx} alt='jsx Icon' ></img>
+                            <div>JSX</div>
+                        </div>
+                        <div>
+                            <img className='skill-img' src={node} alt='Node Icon' ></img>
+                            <div>Node</div>
+                        </div>
+                        <div>
+                            <img className='skill-img' src={webpack} alt='Webpack Icon' ></img>
+                            <div>Webpack</div>
+                        </div>
+                        <div>
+                            <img className='skill-img' src={figma} alt='Figma Icon' ></img>
+                            <div>Figma</div>
+                        </div>
+ 
                     </div>
-                    <div>
-                        <img className='skill-img' src={react} alt='react Icon' ></img>
-                        <div>React</div>
-                    </div>
-                    <div>
-                        <img className='skill-img' src={jsx} alt='jsx Icon' ></img>
-                        <div>JSX</div>
-                    </div>
-                    <div>
-                        <img className='skill-img' src={node} alt='Node Icon' ></img>
-                        <div>Node</div>
-                    </div>
-                    <div>
-                        <img className='skill-img' src={webpack} alt='Webpack Icon' ></img>
-                        <div>Webpack</div>
-                    </div>
-                    <div>
-                        <img className='skill-img' src={figma} alt='Figma Icon' ></img>
-                        <div>Figma</div>
-                    </div>
-        
                 </div>
             </div>
-        </div>
-    );
+        );
+    }   
 }
 
 export default About;

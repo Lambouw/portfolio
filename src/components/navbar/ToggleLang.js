@@ -1,17 +1,17 @@
 import React, { useContext, useEffect } from 'react';
-import { ThemeContext } from "../../App";
+import { LangContext } from "../../App";
 
-import moon from '../../assets/images/moon.svg';
-import sun from '../../assets/images/sun.svg';
+import ger from '../../assets/images/flagde.png';
+import eng from '../../assets/images/flaguk.svg';
 
-const ToggleTheme = () => {
-    const { lang, toggleLang } = useContext(ThemeContext);
+const ToggleLang = () => {
+    const { lang, toggleLang } = useContext(LangContext);
     
     let img;
     if (lang === 'eng') {
-        img = <img onClick={() => {toggleTheme()}} src={sun} alt='sun icon' aria-label='light-mode-switch' ></img>
+        img = <img onClick={() => {toggleLang()}} src={ger} alt='ger flag icon' aria-label='ger-mode-switch' ></img>
     } else {
-        img = <img onClick={() => {toggleTheme()}} src={moon} alt='moon icon' aria-label='dark-mode-switch' ></img>
+        img = <img onClick={() => {toggleLang()}} src={eng} alt='eng flag icon' aria-label='eng-mode-switch' ></img>
     }
 
     return (
@@ -21,4 +21,4 @@ const ToggleTheme = () => {
     );
 };
 
-export default ToggleTheme;
+export default ToggleLang;

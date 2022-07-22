@@ -72,16 +72,16 @@ footer {
 /* =============== Eng/Ger-Mode Styles =============== */
 
 .lang {
-    padding-bottom: 1rem;
+    padding-bottom: 0.4rem;
 }
 
-.flag {
+.lang img{
     width: 1.8rem;
     height: 1.8rem;
     border-radius: 50%;
 }
 
-.flag:hover {
+.lang img:hover {
     cursor: pointer;
     opacity: 0.5;
     transition: ease-in-out 300ms;

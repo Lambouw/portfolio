@@ -13,33 +13,41 @@ import Imprint from './components/imprint/Imprint';
 import Data from './components/data/Data';
 
 export const ThemeContext = createContext(null);
+export const LangContext = createContext(null);
 
 function App() {
   const [theme, setTheme] = useState('dark');
+  const [lang, setLang] = useState('ger');
   
   const toggleTheme = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');
   };
 
+  const toggleLang = () => {
+    setLang(lang === 'eng' ? 'ger' : 'eng');
+  };
+
   return (
     <Router>
-      <ThemeContext.Provider value={{ theme, toggleTheme }}>
-        <div className='app' id={theme} >
-          <div className='flex-col' >
-            <Navbar />            
-            <div className='content navbar-distance' >
-              <Routes>
-                <Route path='/portfolio' element={<Home />}></Route>
-                <Route path='/portfolio/uebermich' element={<About />}></Route>
-                <Route path='/portfolio/projekte' element={<Projects />}></Route>
-                <Route path='/portfolio/kontakt' element={<Contact />}></Route>
-                <Route path='/portfolio/impressum' element={<Imprint />}></Route>
-                <Route path='/portfolio/datenschutz' element={<Data />}></Route>
-              </Routes>
+      <LangContext.Provider value={{ lang, toggleLang }}>
+        <ThemeContext.Provider value={{ theme, toggleTheme }}>
+          <div className='app' id={theme} >
+            <div className='flex-col' >
+              <Navbar />            
+              <div className='content navbar-distance' >
+                <Routes>
+                  <Route path='/portfolio' element={<Home />}></Route>
+                  <Route path='/portfolio/uebermich' element={<About />}></Route>
+                  <Route path='/portfolio/projekte' element={<Projects />}></Route>
+                  <Route path='/portfolio/kontakt' element={<Contact />}></Route>
+                  <Route path='/portfolio/impressum' element={<Imprint />}></Route>
+                  <Route path='/portfolio/datenschutz' element={<Data />}></Route>
+                </Routes>
+              </div>
             </div>
           </div>
-        </div>
-      </ThemeContext.Provider>
+        </ThemeContext.Provider>
+      </LangContext.Provider>
     </Router>    
   );
 }

@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useContext } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
+
+import { LangContext } from "../../App";
 
 import './Projects.css';
 import 'swiper/css';
@@ -16,9 +18,11 @@ import fmmg from '../../assets/images/FMMG.png';
 import redditcl from '../../assets/images/reddit-client.png';
 
 const Projects = () => {
+    const { lang, toggleLang } = useContext(LangContext);
+
     return (
         <div className='projects white' >
-            <h2>Projects</h2>
+            { lang === 'eng' ? <h2>Projects</h2> : <h2>Projekte</h2> }
             <Swiper
                 className='swiper mySwiper'
                 navigation={true}
