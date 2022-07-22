@@ -1,0 +1,279 @@
+/* =============== Basic Coloring Styles =============== */
+
+#dark {
+    color: #FFFFFF;
+}
+
+#dark a {
+    color: #FFFFFF;
+}
+
+#light {
+    color: #0C1117;
+}
+
+#light a {
+    color: #0C1117;
+}
+
+/* =============== Navbar Styles =============== */
+
+#dark .navbar {
+    background-color: #0C1117;
+}
+
+#dark .sidebar {
+    box-shadow: 1px 0px 10px 1px #0C1117;
+}
+
+#light .navbar {
+    background-color: #91a9c5;
+}
+
+#light .sidebar {
+    box-shadow: 1px 0px 10px 1px #91a9c5;
+
+}
+
+#dark .navbar .nav-items a:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    transition: ease-in-out 300ms;
+}
+
+#light .navbar .nav-items a:hover {
+    opacity: 0.5;    
+    cursor: pointer;
+    transition: ease-in-out 300ms;
+}
+
+#dark .btn-contact ,
+#light .btn-contact {
+    color: #0C1117;
+}
+
+#dark .btn-contact {
+    background-color: #66D8FF;
+}
+
+#light .btn-contact {
+    background-color: #f59d0a;
+}
+
+#dark .btn-contact:hover {
+    background-color: #bdeeff;
+    cursor: pointer;
+    transition: ease-in-out 300ms;
+}
+
+#light .btn-contact:hover {
+    background-color: #f9c062;
+    cursor: pointer;
+    transition: ease-in-out 300ms;
+}
+
+/* =============== Home Styles =============== */
+
+#dark .home {
+    background-color: #1b2633;
+}
+
+#light .home {
+    background-color: #bccadb;
+}
+
+#dark .btn-socials,
+#light .btn-socials {
+    color: #0C1117;
+}
+
+#dark .btn-socials {
+    background-color: #66D8FF;
+}
+
+#light .btn-socials {
+    background-color: #f59d0a;
+}
+
+#dark .btn-socials:hover {
+    background-color: #bdeeff;
+        cursor: pointer;
+    transition: ease-in-out 300ms;
+}
+
+#light .btn-socials:hover {
+    background-color: #f9c062;
+    cursor: pointer;
+    transition: ease-in-out 300ms;
+}
+
+/* =============== About Styles =============== */
+
+#dark .about {
+    background-color: #1b2633;
+}
+
+#light .about {
+    background-color: #bccadb;
+}
+
+#dark .btn-cv,
+#light .btn-cv {
+    color: #0C1117;
+}
+
+#dark .btn-cv {
+    background-color: #66D8FF;
+}
+
+#light .btn-cv {
+    background-color: #f59d0a;
+}
+
+#dark .btn-cv:hover {
+    background-color: #bdeeff;
+    cursor: pointer;
+    transition: ease-in-out 300ms;
+}
+
+#light .btn-cv:hover {
+    background-color: #f9c062;
+    cursor: pointer;
+    transition: ease-in-out 300ms;
+}
+
+/* =============== Projects Styles =============== */
+
+#dark .projects {
+    background-color: #1b2633;
+}
+
+#light .projects {
+    background-color: #bccadb;
+}
+
+#dark .projects .description {
+    background-color: #0C1117;
+}
+
+#light .projects .description {
+    background-color: #91a9c5;
+}
+
+#dark .swiper-pagination-bullet {
+    background: white !important;
+    opacity: 1;
+}
+
+#dark .swiper-pagination-bullet-active {
+    background-color: #66D8FF !important;
+}
+
+#dark .swiper-button-prev {
+    color: #66D8FF !important;
+}
+
+#dark .swiper-button-next {
+    color: #66D8FF !important;
+}
+
+#light .swiper-pagination-bullet {
+    background: #0C1117 !important;
+    opacity: 1;
+}
+
+#light .swiper-pagination-bullet-active {
+    background-color: #f59d0a !important;
+}
+
+#light .swiper-button-prev {
+    color: #f59d0a !important;
+}
+
+#light .swiper-button-next {
+    color: #f59d0a !important;
+}
+
+/* =============== Contact Styles =============== */
+
+#dark .contact {
+    background-color: #1b2633;
+}
+
+#light .contact {
+    background-color: #bccadb;
+}
+
+#dark .input-name {
+    color: white;
+    background-color: #0C1117;
+}
+
+#dark .input-email {
+    color: white;
+    background-color: #0C1117;
+}
+
+#dark .input-message {
+    color: white;
+    background-color: #0C1117;
+}
+
+#light .input-name {
+    color: #1b2633;
+    background-color: #91a9c5;
+}
+
+#light .input-email {
+    color: #1b2633;
+    background-color: #91a9c5;
+}
+
+#light .input-message {
+    color: #1b2633;
+    background-color: #91a9c5;
+}
+
+#light .btn-submit {
+    background-color: #f59d0a;
+}
+
+#dark .btn-submit {
+    background-color: #66D8FF;
+}
+
+#light .btn-submit {
+    background-color: #f59d0a;
+}
+
+#dark .btn-submit:hover {
+    background-color: #bdeeff;
+    cursor: pointer;
+    transition: ease-in-out 300ms;
+}
+
+#light .btn-submit:hover {
+    background-color: #f9c062;
+    cursor: pointer;
+    transition: ease-in-out 300ms;
+}
+
+/* =============== Imprint Styles =============== */
+
+#dark .imprint {
+    background-color: #1b2633;
+}
+
+#light .imprint {
+    background-color: #bccadb;
+}
+
+/* =============== Data Styles =============== */
+
+#dark .data {
+    background-color: #1b2633;
+}
+
+#light .data {
+    background-color: #bccadb;
+}

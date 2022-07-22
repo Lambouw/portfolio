@@ -1,0 +1,72 @@
+/* =============== Basic Styles =============== */
+
+.contact {    
+    background-color: #1b2633;
+    height: 100vh;
+    padding: 6% 10% 10% 10%;
+
+}
+
+/* =============== Form Styles =============== */
+
+.contact h2 {
+    font-size: 3.625rem;
+    letter-spacing: 0.3rem;
+    margin-bottom: 3.625rem;
+    text-align: center;
+}
+
+.form-wrapper {
+    margin: 0 auto;
+    width: 35rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.input-name {
+    border: none;
+    border-radius: 0.3rem;
+    margin-bottom: 0.2rem;
+    padding: 0.2rem 0.4rem;
+    font-family: 'Poppins', sans-serif;
+    width: 35rem;
+    font-size: 1rem;
+}
+
+.input-email {
+    border: none;
+    border-radius: 0.3rem;
+    margin-bottom: 0.2rem;
+    padding: 0.2rem 0.4rem;
+    font-family: 'Poppins', sans-serif;
+    width: 35rem;
+    font-size: 1rem;
+}
+
+.input-message {
+    border: none;
+    border-radius: 0.3rem;
+    margin-bottom: 0.4rem;
+    padding: 0.4rem 0.4rem;
+    font-family: 'Poppins', sans-serif;
+    width: 35rem;
+    height: 15rem;
+    font-size: 1rem;
+}
+
+.btn-submit {
+    border: none;
+    border-radius: 0.6rem;
+    width: 6rem;
+    padding: 0.6rem 0;
+    height: 100%;
+    font-size: 1.1rem;
+    margin-right: 0;
+    margin-left: auto;
+    text-align: center;
+}

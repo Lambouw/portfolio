@@ -1,0 +1,36 @@
+/* =============== Basic Styles =============== */
+
+.imprint-wrapper {
+    height: 100vh;
+}
+
+.imprint {    
+    padding: 6% 10% 10% 10%;
+}
+
+/* =============== Text Styles =============== */
+
+.imprint h2 {
+    margin-bottom: 3.625rem;
+}
+
+.imprint h4 {
+    margin-bottom: 1.4rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.imprint h5 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.imprint p {
+    margin-bottom: 1.4rem;
+    line-height: 1.3;
+}
+
+.imprint p a:hover {
+    opacity: 0.5;
+}

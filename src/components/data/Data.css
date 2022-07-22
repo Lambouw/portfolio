@@ -1,0 +1,46 @@
+/* =============== Basic Styles =============== */
+
+.data-wrapper {
+    height: 100vh;
+}
+
+.data {    
+    height: 100%;
+    padding: 6% 10% 10% 10%;
+}
+
+/* =============== Text Styles =============== */
+
+.data h2 {
+    margin-bottom: 3.625rem;
+}
+
+.data h4 {
+    margin-bottom: 1.4rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.data h5 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.data p {
+    margin-bottom: 1.4rem;
+    line-height: 1.3;
+}
+
+.data ul {
+    margin-bottom: 1.4rem;
+    margin-left: 2rem;
+}
+
+.data li {
+    line-height: 1.3;
+}
+
+.data p a:hover {
+    opacity: 0.5;
+}
