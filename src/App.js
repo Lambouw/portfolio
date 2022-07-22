@@ -17,7 +17,7 @@ export const LangContext = createContext(null);
 
 function App() {
   const [theme, setTheme] = useState('dark');
-  const [lang, setLang] = useState('ger');
+  const [lang, setLang] = useState('eng');
   
   const toggleTheme = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');
