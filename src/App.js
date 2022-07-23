@@ -8,6 +8,8 @@ import Navbar from './components/navbar/Navbar';
 import Home from './components/home/Home';
 import About from './components/about/About';
 import Projects from './components/projects/Projects';
+import Project1 from './components/projects/Project1';
+import Project2 from './components/projects/Project2';
 import Contact from './components/contact/Contact';
 import Imprint from './components/imprint/Imprint';
 import Data from './components/data/Data';
@@ -37,11 +39,13 @@ function App() {
               <div className='content navbar-distance' >
                 <Routes>
                   <Route path='/portfolio' element={<Home />}></Route>
-                  <Route path='/portfolio/uebermich' element={<About />}></Route>
-                  <Route path='/portfolio/projekte' element={<Projects />}></Route>
-                  <Route path='/portfolio/kontakt' element={<Contact />}></Route>
-                  <Route path='/portfolio/impressum' element={<Imprint />}></Route>
-                  <Route path='/portfolio/datenschutz' element={<Data />}></Route>
+                  <Route path='/portfolio/about' element={<About />}></Route>
+                  <Route path='/portfolio/projects' element={<Projects />}></Route>
+                  <Route path='/portfolio/projects/1' element={<Project1 />}></Route>
+                  <Route path='/portfolio/projects/2' element={<Project2 />}></Route>
+                  <Route path='/portfolio/contact' element={<Contact />}></Route>
+                  <Route path='/portfolio/legal' element={<Imprint />}></Route>
+                  <Route path='/portfolio/privacy' element={<Data />}></Route>
                 </Routes>
               </div>
             </div>

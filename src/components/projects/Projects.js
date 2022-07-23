@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { NavLink } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { LangContext } from "../../App";
@@ -35,32 +36,37 @@ const Projects = () => {
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
             >
+                
                 <SwiperSlide className='swiper-slide' >
-                    <div className='project-container' >
-                        <img className='img-container' src={fmmg} alt='fmmg-image' />
-                        <div className='description' >
-                            <h4>Football Manager Mission Generator</h4>
-                            <div className='icon-container' >
-                                <img className='icon' src={html5} alt='html5' ></img>
-                                <img className='icon' src={css3} alt='css3' ></img>
-                                <img className='icon' src={javascript} alt='javascript' ></img>
+                    <NavLink to='/portfolio/projects/1' >
+                        <div className='project-container' >
+                            <img className='img-container' src={fmmg} alt='fmmg-image' />
+                            <div className='description' >
+                                <h4>Football Manager Mission Generator</h4>
+                                <div className='icon-container' >
+                                    <img className='icon' src={html5} alt='html5' ></img>
+                                    <img className='icon' src={css3} alt='css3' ></img>
+                                    <img className='icon' src={javascript} alt='javascript' ></img>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </NavLink>
                 </SwiperSlide>
                 <SwiperSlide className='swiper-slide' >
-                <div className='project-container' >
-                        <img className='img-container' src={redditcl} alt='' />
-                        <div className='description' >
-                            <h4>Reddit Client</h4>
-                            <div className='icon-container' >
-                                <img className='icon' src={html5} alt='html5' ></img>
-                                <img className='icon' src={css3} alt='css3' ></img>
-                                <img className='icon' src={javascript} alt='javascript' ></img>
-                                <img className='icon' src={react} alt='react' ></img>
-                            </div>
-                        </div>
-                    </div>   
+                    <NavLink to='/portfolio/projects/2' >
+                        <div className='project-container' >
+                                <img className='img-container' src={redditcl} alt='' />
+                                <div className='description' >
+                                    <h4>Reddit Client</h4>
+                                    <div className='icon-container' >
+                                        <img className='icon' src={html5} alt='html5' ></img>
+                                        <img className='icon' src={css3} alt='css3' ></img>
+                                        <img className='icon' src={javascript} alt='javascript' ></img>
+                                        <img className='icon' src={react} alt='react' ></img>
+                                    </div>
+                                </div>
+                            </div>   
+                    </NavLink>
                 </SwiperSlide>
             </Swiper>
         </div>

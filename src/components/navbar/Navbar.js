@@ -24,9 +24,9 @@ function Navbar() {
                     </div>
                     <div className='nav-items'>
                         <NavLink className='nav-item li-marg-bot1' to='/portfolio' >Home</NavLink>
-                        <NavLink className='nav-item li-marg-bot1' to='/portfolio/uebermich' >About</NavLink>
-                        <NavLink className='nav-item li-marg-bot2' to='/portfolio/projekte' >Projects</NavLink>
-                        <NavLink className='btn-contact' to='/portfolio/kontakt' >
+                        <NavLink className='nav-item li-marg-bot1' to='/portfolio/about' >About</NavLink>
+                        <NavLink className='nav-item li-marg-bot2' to='/portfolio/projects' >Projects</NavLink>
+                        <NavLink className='btn-contact' to='/portfolio/contact' >
                             Contact
                         </NavLink>
                     </div>
@@ -38,9 +38,9 @@ function Navbar() {
                             <ToggleTheme />
                         </div>
                         <div className='imprint-data'>
-                            <NavLink to='/portfolio/impressum' >Legal Notice </NavLink> 
+                            <NavLink to='/portfolio/legal' >Legal Notice </NavLink> 
                             |
-                            <NavLink to='/portfolio/datenschutz' > Privacy Policy</NavLink>
+                            <NavLink to='/portfolio/privacy' > Privacy Policy</NavLink>
                         </div>
                     </footer>
                 </nav>
