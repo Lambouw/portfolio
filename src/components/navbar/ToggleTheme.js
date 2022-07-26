@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext } from 'react';
 import { ThemeContext } from "../../App";
 
 import moon from '../../assets/images/moon.svg';
@@ -9,9 +9,9 @@ const ToggleTheme = () => {
     
     let img;
     if (theme === 'dark') {
-        img = <img onClick={() => {toggleTheme()}} src={sun} alt='sun icon' aria-label='light-mode-switch' ></img>
+        img = <img onClick={() => {toggleTheme()}} src={sun} alt='sun' aria-label='light-mode-switch' ></img>
     } else {
-        img = <img onClick={() => {toggleTheme()}} src={moon} alt='moon icon' aria-label='dark-mode-switch' ></img>
+        img = <img onClick={() => {toggleTheme()}} src={moon} alt='moon' aria-label='dark-mode-switch' ></img>
     }
 
     return (

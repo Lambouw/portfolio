@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
-import { BrowserRouter as Router, Route, Link, NavLink } from 'react-router-dom'; 
+import { NavLink } from 'react-router-dom'; 
 
-import { ThemeContext, LangContext } from "../../App";
+import { LangContext } from "../../App";
 import ToggleTheme from './ToggleTheme.js';
 import ToggleLang from './ToggleLang.js';
 
@@ -10,16 +10,21 @@ import './Navbar.css';
 import iconml from '../../assets/images/iconml.png';
 
 function Navbar() {
-    const { theme, toggleTheme } = useContext(ThemeContext);
-    const { lang, toggleLang } = useContext(LangContext);
+    const { lang } = useContext(LangContext);
+
+    const toggleMenu = () => {
+        let hamburger = document.getElementsByClassName("MenuHmb")[0];
+        hamburger.style.display = "flex";
+        console.log("open hamburger menu");
+    }
 
     if (lang === 'eng') {
         return (
-            <div className='sidebar' >    
-                <nav className='navbar' >
+            <div className='navbar' >    
+                <nav >
                     <div className='profile' >
                         <NavLink to='/portfolio' >
-                            <img src={iconml} alt="iconml" />
+                            <img src={iconml} alt="ml" />
                         </NavLink>
                     </div>
                     <div className='nav-items'>
@@ -30,12 +35,19 @@ function Navbar() {
                             Contact
                         </NavLink>
                     </div>
+                    <div className='hamburger-menu' onClick={toggleMenu} >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                     <footer>
-                        <div className='lang' >
-                            <ToggleLang />
-                        </div>
-                        <div>
-                            <ToggleTheme />
+                        <div className='toggler' >
+                            <div className='lang' >
+                                <ToggleLang />
+                            </div>
+                            <div>
+                                <ToggleTheme />
+                            </div>
                         </div>
                         <div className='imprint-data'>
                             <NavLink to='/portfolio/legal' >Legal Notice </NavLink> 
@@ -48,8 +60,8 @@ function Navbar() {
         );
     } else {
         return (
-            <div className='sidebar' >    
-                <nav className='navbar' >
+            <div className='navbar' >    
+                <nav >
                     <div className='profile' >
                         <NavLink to='/portfolio' >
                             <img src={iconml} alt="iconml" />
@@ -57,23 +69,30 @@ function Navbar() {
                     </div>
                     <div className='nav-items'>
                         <NavLink className='nav-item li-marg-bot1' to='/portfolio' >Start</NavLink>
-                        <NavLink className='nav-item li-marg-bot1' to='/portfolio/uebermich' >Über mich</NavLink>
-                        <NavLink className='nav-item li-marg-bot2' to='/portfolio/projekte' >Projekte</NavLink>
-                        <NavLink className='btn-contact' to='/portfolio/kontakt' >
+                        <NavLink className='nav-item li-marg-bot1' to='/portfolio/about' >Über mich</NavLink>
+                        <NavLink className='nav-item li-marg-bot2' to='/portfolio/projects' >Projekte</NavLink>
+                        <NavLink className='btn-contact' to='/portfolio/contact' >
                             Kontakt
                         </NavLink>
+                    </div>                    
+                    <div className='hamburger-menu' onClick={toggleMenu} >
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
                     <footer>
-                        <div className='lang' >
-                            <ToggleLang />
-                        </div>
-                        <div>
-                            <ToggleTheme />
+                        <div className='toggler' >
+                            <div className='lang' >
+                                <ToggleLang />
+                            </div>
+                            <div>
+                                <ToggleTheme />
+                            </div>
                         </div>
                         <div className='imprint-data'>
-                            <NavLink to='/portfolio/impressum' >Impressum </NavLink> 
+                            <NavLink to='/portfolio/legal' >Impressum </NavLink> 
                             |
-                            <NavLink to='/portfolio/datenschutz' > Datenschutz</NavLink>
+                            <NavLink to='/portfolio/privacy' > Datenschutz</NavLink>
                         </div>
                     </footer>
                 </nav>

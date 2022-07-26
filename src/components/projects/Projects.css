@@ -20,18 +20,67 @@ h2 {
 .project-container {
     padding: 2rem 3rem;
     /* background-color: white; */
+}
 
+.projects .img-wrapper {
+    background-repeat: none;
+    background-size: cover;
+    border-radius: 1rem 1rem 0rem 0rem;
+    height: 20rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.projects .fmmg {
+    background-image: url('../../assets/images/FMMG.png');
+    background-position: center;
+}
+
+.projects .img-wrapper .description {
+    border-radius: 1rem 1rem 0rem 0rem;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 0rem 1rem 2rem 0rem;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.projects .img-wrapper .description:hover {
+    opacity: 1;
+}
+
+.projects .img-wrapper .description p {
+    margin-bottom: 1rem;
+}
+
+.projects .img-wrapper .description .btn-project {
+    border-radius: 50%;
+    border: none;
+    padding: 0.5rem 0.5rem 0.4rem 0.5rem;
+}
+
+.projects .img-wrapper .description a {
+    margin-left: 0.5rem;
+}
+
+.projects .img-wrapper .description .btn-project img {
+    width: 1.3rem;
+    height: 1.3rem;
 }
 
 .img-container {
-    border-radius: 1rem 1rem 0rem 0rem;
     display: block;
-    height: 20rem;
-    width: 100%;
     object-fit: cover;
 }
 
-.projects .description {
+.projects .title {
     border-radius: 0rem 0rem 1rem 1rem;
     height: 6rem;
     text-align: end;
@@ -55,3 +104,12 @@ h2 {
 
 /* =============== Project-Container Styles =============== */
 
+.MOIN {
+    height: 40rem;
+    width: 70rem;
+}
+
+.MOIN:hover {
+    background-color:#1b2633;
+    opacity: 0.7;
+}

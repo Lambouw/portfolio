@@ -1,0 +1,94 @@
+.MenuHmb {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    border-radius: 0rem 0rem 1rem 1rem;
+}
+
+.MenuHmb .CloseHmb img {
+    width: 1.6rem;
+    position: absolute;
+    right: 1rem;
+}
+
+.MenuHmb .CloseHmb:hover {
+    cursor: pointer;
+}
+
+.MenuHmb .nav-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+}
+
+.MenuHmb .li-marg-bot1 {
+    margin-bottom: 1rem;
+}
+
+.MenuHmb .li-marg-bot2 {
+    margin-bottom: 1rem;
+}
+
+.MenuHmb .nav-items .btn-contact {
+    border-radius: 2rem;
+    padding: 0.4rem 1.4rem;
+    align-items: center;
+}
+
+    /* =============== Footer Styles =============== */
+
+    .MenuHmb footer {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .MenuHmb footer .toggler {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .MenuHmb footer .toggler .lang {
+        margin-bottom: 0.4rem;
+    }
+    /* =============== Language Styles =============== */
+
+    .MenuHmb .lang img{
+        width: 1.8rem;
+        height: 1.8rem;
+        border-radius: 50%;
+    }
+    
+    .MenuHmb .lang img:hover {
+        cursor: pointer;
+        opacity: 0.5;
+        transition: ease-in-out 300ms;
+    }
+
+    /* =============== Imprint/Data Styles =============== */
+
+    .MenuHmb .imprint-data {
+        font-size: 0.7rem;
+    }
+
+    .MenuHmb .imprint-data a:hover {
+        cursor: pointer;
+        opacity: 0.5;    
+        transition: ease-in-out 300ms;
+    } 

@@ -1,15 +1,11 @@
-.flex-col {
-    display: flex;
-    width: 100%;
-}
-
 .content {
-    width: 10rem;
-    height: 10rem;
-}
-
-.navbar-distance {
+    overflow: auto;
     margin-left: 16%;
     width: 84%;
     position: absolute;
+}
+
+.flex-col {
+    display: flex;
+    width: 100%;
 }

@@ -16,32 +16,44 @@
     color: #0C1117;
 }
 
+/* =============== Hamburger Menu Styles =============== */
+
+#dark .MenuHmb {
+    background-color: rgb(12, 17, 23, 1);
+    border-bottom: 1px solid white;
+}
+
+#light .MenuHmb {
+    background-color: rgb(145, 169, 197, 1);
+    border-bottom: 1px solid #0C1117;
+}
+
 /* =============== Navbar Styles =============== */
 
-#dark .navbar {
+#dark nav {
     background-color: #0C1117;
 }
 
-#dark .sidebar {
+#dark .navbar {
     box-shadow: 1px 0px 10px 1px #0C1117;
 }
 
-#light .navbar {
+#light nav {
     background-color: #91a9c5;
 }
 
-#light .sidebar {
+#light .navbar {
     box-shadow: 1px 0px 10px 1px #91a9c5;
 
 }
 
-#dark .navbar .nav-items a:hover {
+#dark nav .nav-items a:hover {
     opacity: 0.5;
     cursor: pointer;
     transition: ease-in-out 300ms;
 }
 
-#light .navbar .nav-items a:hover {
+#light nav .nav-items a:hover {
     opacity: 0.5;    
     cursor: pointer;
     transition: ease-in-out 300ms;
@@ -152,12 +164,50 @@
     background-color: #bccadb;
 }
 
-#dark .projects .description {
+#dark .projects .title {
     background-color: #0C1117;
 }
 
-#light .projects .description {
+#light .projects .title {
     background-color: #91a9c5;
+}
+
+#dark .projects .description {
+    background-color: rgb(12, 17, 23, 0.9);
+}
+
+#light .projects .description {
+    background-color: rgb(145, 169, 197, 0.9);
+}
+
+#dark .projects .portfolio {
+    background-image: url('./assets/images/portfolio-dark.png');
+    background-position: 50% 15%;
+}
+
+#light .projects .portfolio {
+    background-image: url('./assets/images/portfolio-light.png');
+    background-position: 50% 15%;
+}
+
+#dark .projects .img-wrapper .description .btn-project {
+    background-color: #66D8FF;
+}
+
+#dark .projects .img-wrapper .description .btn-project:hover {
+    background-color: #bdeeff;
+    cursor: pointer;
+    transition: ease-in-out 300ms;
+}
+
+#light .projects .img-wrapper .description .btn-project {
+    background-color: #f59d0a;
+}
+
+#light .projects .img-wrapper .description .btn-project:hover {
+    background-color: #f9c062;
+    cursor: pointer;
+    transition: ease-in-out 300ms;
 }
 
 #dark .swiper-pagination-bullet {

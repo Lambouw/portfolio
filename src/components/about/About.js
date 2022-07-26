@@ -14,7 +14,7 @@ import webpack from '../../assets/images/webpack.png';
 import figma from '../../assets/images/figma.png';
 
 function About() {
-    const { lang, toggleLang } = useContext(LangContext);
+    const { lang } = useContext(LangContext);
 
     if (lang === 'eng') {
         return (
@@ -37,35 +37,35 @@ function About() {
                    <h3>Skills</h3>
                    <div className='skills' >
                        <div>
-                           <img className='skill-img' src={html5} alt='HTML5 Icon' ></img>
+                           <img className='skill-img' src={html5} alt='HTML5' ></img>
                            <div>HTML5</div>
                        </div>
                        <div>
-                           <img className='skill-img' src={css3} alt='CSS3 Icon' ></img>
+                           <img className='skill-img' src={css3} alt='CSS3' ></img>
                            <div>CSS3</div>
                        </div>
                        <div>
-                           <img className='skill-img' src={javascript} alt='JavaScript Icon' ></img>
+                           <img className='skill-img' src={javascript} alt='JavaScript' ></img>
                            <div>JavaScript</div>
                        </div>
                        <div>
-                           <img className='skill-img' src={react} alt='react Icon' ></img>
+                           <img className='skill-img' src={react} alt='react' ></img>
                            <div>React</div>
                        </div>
                        <div>
-                           <img className='skill-img' src={jsx} alt='jsx Icon' ></img>
+                           <img className='skill-img' src={jsx} alt='jsx' ></img>
                            <div>JSX</div>
                        </div>
                        <div>
-                           <img className='skill-img' src={node} alt='Node Icon' ></img>
+                           <img className='skill-img' src={node} alt='Node' ></img>
                            <div>Node</div>
                        </div>
                        <div>
-                           <img className='skill-img' src={webpack} alt='Webpack Icon' ></img>
+                           <img className='skill-img' src={webpack} alt='Webpack' ></img>
                            <div>Webpack</div>
                        </div>
                        <div>
-                           <img className='skill-img' src={figma} alt='Figma Icon' ></img>
+                           <img className='skill-img' src={figma} alt='Figma' ></img>
                            <div>Figma</div>
                        </div>
 
@@ -93,35 +93,35 @@ function About() {
                     <h3>Kompetenzen</h3>
                     <div className='skills' >
                         <div>
-                            <img className='skill-img' src={html5} alt='HTML5 Icon' ></img>
+                            <img className='skill-img' src={html5} alt='HTML5' ></img>
                             <div>HTML5</div>
                         </div>
                         <div>
-                            <img className='skill-img' src={css3} alt='CSS3 Icon' ></img>
+                            <img className='skill-img' src={css3} alt='CSS3' ></img>
                             <div>CSS3</div>
                         </div>
                         <div>
-                            <img className='skill-img' src={javascript} alt='JavaScript Icon' ></img>
+                            <img className='skill-img' src={javascript} alt='JavaScript' ></img>
                             <div>JavaScript</div>
                         </div>
                         <div>
-                            <img className='skill-img' src={react} alt='react Icon' ></img>
+                            <img className='skill-img' src={react} alt='react' ></img>
                             <div>React</div>
                         </div>
                         <div>
-                            <img className='skill-img' src={jsx} alt='jsx Icon' ></img>
+                            <img className='skill-img' src={jsx} alt='jsx' ></img>
                             <div>JSX</div>
                         </div>
                         <div>
-                            <img className='skill-img' src={node} alt='Node Icon' ></img>
+                            <img className='skill-img' src={node} alt='Node' ></img>
                             <div>Node</div>
                         </div>
                         <div>
-                            <img className='skill-img' src={webpack} alt='Webpack Icon' ></img>
+                            <img className='skill-img' src={webpack} alt='Webpack In' ></img>
                             <div>Webpack</div>
                         </div>
                         <div>
-                            <img className='skill-img' src={figma} alt='Figma Icon' ></img>
+                            <img className='skill-img' src={figma} alt='Figma' ></img>
                             <div>Figma</div>
                         </div>
  

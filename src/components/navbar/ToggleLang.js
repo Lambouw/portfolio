@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext } from 'react';
 import { LangContext } from "../../App";
 
 import ger from '../../assets/images/flagde.png';
@@ -9,9 +9,9 @@ const ToggleLang = () => {
     
     let img;
     if (lang === 'eng') {
-        img = <img onClick={() => {toggleLang()}} src={ger} alt='ger flag icon' aria-label='ger-mode-switch' ></img>
+        img = <img onClick={() => {toggleLang()}} src={ger} alt='ger flag' aria-label='ger-mode-switch' ></img>
     } else {
-        img = <img onClick={() => {toggleLang()}} src={eng} alt='eng flag icon' aria-label='eng-mode-switch' ></img>
+        img = <img onClick={() => {toggleLang()}} src={eng} alt='eng flag' aria-label='eng-mode-switch' ></img>
     }
 
     return (
