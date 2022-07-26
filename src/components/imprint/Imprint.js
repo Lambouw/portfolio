@@ -54,7 +54,7 @@ const Imprint = () => {
         return (
             <div className='imprint-wrapper' >
                 <div className='imprint' >
-                    <h2>Imprint</h2>
+                    <h2>Impressum</h2>
     
                     <h4>Angaben gem&auml;&szlig; &sect; 5 TMG</h4>
                     <p>Malte Lindemann<br />

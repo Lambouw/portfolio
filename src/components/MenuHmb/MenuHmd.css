@@ -18,6 +18,8 @@
 
 .MenuHmb .CloseHmb:hover {
     cursor: pointer;
+    opacity: 0.5;
+    transition: ease-in-out 300ms;
 }
 
 .MenuHmb .nav-items {
@@ -67,6 +69,20 @@
     .MenuHmb footer .toggler .lang {
         margin-bottom: 0.4rem;
     }
+
+        /* =============== Light/Dark-Mode Styles =============== */
+
+        .MenuHmb .theme img {
+            width: 1.8rem;
+            height: 1.8rem;
+        }
+    
+        .MenuHmb .theme img:hover {
+            cursor: pointer;
+            opacity: 0.5;    
+            transition: ease-in-out 300ms;
+        }
+
     /* =============== Language Styles =============== */
 
     .MenuHmb .lang img{

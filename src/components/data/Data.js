@@ -44,7 +44,7 @@ const Data = () => {
         return (
             <div className='data-wrapper' >    
                 <div className='data' >
-                    <h2>Datenschutz</h2>
+                    <h2>Datenschutzerklärung</h2>
                     
                     <p>Letzte Änderung: 22.07.2022<br/>
                     <strong>TLDR: </strong>Für die Besucher von maltelindemann.com verwenden wir keine Cookies und wir erheben keine personenbezogenen Daten, 

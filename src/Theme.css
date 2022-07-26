@@ -47,17 +47,19 @@
 
 }
 
-#dark nav .nav-items a:hover {
+#dark .nav-items a:hover {
     opacity: 0.5;
     cursor: pointer;
     transition: ease-in-out 300ms;
 }
 
-#light nav .nav-items a:hover {
+#light .nav-items a:hover {
     opacity: 0.5;    
     cursor: pointer;
     transition: ease-in-out 300ms;
 }
+
+
 
 #dark .btn-contact ,
 #light .btn-contact {

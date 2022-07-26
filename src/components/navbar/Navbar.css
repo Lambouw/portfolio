@@ -145,7 +145,7 @@
     .MenuHmb {
         display: none;
     }
-    
+
     /* =============== Navbar Styles =============== */
 
     .navbar {
@@ -240,6 +240,19 @@
     .navbar .lang img:hover {
         cursor: pointer;
         opacity: 0.5;
+        transition: ease-in-out 300ms;
+    }
+
+    /* =============== Light/Dark-Mode Styles =============== */
+
+    .navbar .theme img {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+
+    .navbar .theme img:hover {
+        cursor: pointer;
+        opacity: 0.5;    
         transition: ease-in-out 300ms;
     }
 
