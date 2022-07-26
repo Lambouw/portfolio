@@ -10,7 +10,13 @@
     border-radius: 0rem 0rem 1rem 1rem;
 }
 
-.MenuHmb .CloseHmb img {
+#dark .MenuHmb .CloseHmb img {
+    width: 1.6rem;
+    position: absolute;
+    right: 1rem;
+}
+
+#light .MenuHmb .CloseHmb img {
     width: 1.6rem;
     position: absolute;
     right: 1rem;

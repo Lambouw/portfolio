@@ -1,6 +1,6 @@
-/* =============== 1170px -> xxpx =============== */
+/* =============== 1171px -> xxpx =============== */
 
-@media only screen and ( min-width: 1170px ) {
+@media only screen and ( min-width: 1171px ) {
     /* =============== Basic Styles =============== */
 
     .navbar {
@@ -131,9 +131,9 @@
     } 
 }
 
-/* =============== 900px -> 1170px =============== */
+/* =============== 801px -> 1170px =============== */
 
-@media only screen and ( min-width: 900px ) and ( max-width: 1170px ) {
+@media only screen and ( min-width: 801px ) and ( max-width: 1170px ) {
     
     .content {
         margin-left: 0%;
@@ -172,7 +172,6 @@
     }
     
     .navbar .profile img {
-        width: 100%;
         height: 83%;
         object-fit: cover;
         border-radius: 50%;
@@ -271,7 +270,7 @@
 
 /* =============== 0px -> 900px =============== */
 
-@media only screen and ( min-width: 0px ) and ( max-width: 900px ) {
+@media only screen and ( min-width: 0px ) and ( max-width: 800px ) {
     
     .content {
         margin-left: 0%;
@@ -292,7 +291,6 @@
     .navbar nav {
         display: flex;
         flex-direction: row;
-        background-color: black;
         min-width: 100%;
         height: 100%;
         justify-content: space-between;
@@ -330,7 +328,6 @@
 
     .navbar .hamburger-menu span {
         border-radius: 1rem;
-        border: 3px solid #0C1117; 
         width: 3rem;
         margin-bottom: 0.4rem;
     }
@@ -343,4 +340,3 @@
         cursor: pointer;
     }
 }
-

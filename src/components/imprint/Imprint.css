@@ -5,7 +5,7 @@
 }
 
 .imprint {    
-    padding: 6% 10% 10% 10%;
+    overflow: auto;
 }
 
 /* =============== Text Styles =============== */
@@ -33,4 +33,31 @@
 
 .imprint p a:hover {
     opacity: 0.5;
+}
+
+/* =============== 1170px -> xxpx =============== */
+
+@media only screen and ( min-width: 1171px ) {
+    
+    .imprint {
+        padding: 8rem 8rem 10rem 8rem;
+    }
+}
+
+/* =============== 801px -> 1170px =============== */
+
+@media only screen and ( min-width: 801px ) and ( max-width: 1170px ) {
+    
+    .imprint {
+        padding: 5rem 4rem 10rem 4rem;
+    }
+}
+
+/* =============== 0px -> 800px =============== */
+
+@media only screen and ( min-width: 0px ) and ( max-width: 800px ) {
+    
+    .imprint {
+        padding: 5rem 2rem 10rem 2rem;
+    }
 }

@@ -6,7 +6,7 @@ import { LangContext } from "../../App";
 import ToggleTheme from '../navbar/ToggleTheme';
 import ToggleLang from '../navbar/ToggleLang.js';
 
-import close from '../../assets/images/x.svg';
+import darkX from '../../assets/images/closeDark.svg';
 
 import './MenuHmd.css';
 
@@ -23,7 +23,7 @@ const MenuHmb = () => {
         return (
             <div className='MenuHmb' >
                 <div className='CloseHmb' onClick={closeMenu} >
-                    <img src={close} alt='close button' ></img>
+                    <img src={darkX} alt='close button' ></img>
                 </div>
                 <div className='nav-items'>
                     <NavLink className='nav-item li-marg-bot1' to='/portfolio' onClick={closeMenu} >Home</NavLink>
@@ -54,7 +54,7 @@ const MenuHmb = () => {
         return (
             <div className='MenuHmb' >
                 <div className='CloseHmb' onClick={closeMenu} >
-                    <img src={close} alt='close button' ></img>
+                    <img src={darkX} alt='close button' ></img>
                 </div>
                 <div className='nav-items'>
                     <NavLink className='nav-item li-marg-bot1' to='/portfolio' onClick={closeMenu} >Start</NavLink>

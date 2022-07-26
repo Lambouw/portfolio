@@ -21,11 +21,7 @@ function About() {
            <div className='about-wrapper' >
                <div className='about'>
                    <div className='header-btn' >
-                       <div className='hidden' ></div>
                        <h2>About</h2>
-                       <a className='btn-cv' href='Lebenslauf.pdf' download='CV_Malte_Lindemann.pdf' target='_blank' >
-                           Download CV
-                       </a>
                    </div>
                    <div className='about-text' >
                        My Name is Malte and I'm 25 years old. Currently im studying my masters in the 
@@ -36,39 +32,38 @@ function About() {
                    </div>
                    <h3>Skills</h3>
                    <div className='skills' >
-                       <div>
-                           <img className='skill-img' src={html5} alt='HTML5' ></img>
-                           <div>HTML5</div>
-                       </div>
-                       <div>
-                           <img className='skill-img' src={css3} alt='CSS3' ></img>
-                           <div>CSS3</div>
-                       </div>
-                       <div>
-                           <img className='skill-img' src={javascript} alt='JavaScript' ></img>
-                           <div>JavaScript</div>
-                       </div>
-                       <div>
-                           <img className='skill-img' src={react} alt='react' ></img>
-                           <div>React</div>
-                       </div>
-                       <div>
-                           <img className='skill-img' src={jsx} alt='jsx' ></img>
-                           <div>JSX</div>
-                       </div>
-                       <div>
-                           <img className='skill-img' src={node} alt='Node' ></img>
-                           <div>Node</div>
-                       </div>
-                       <div>
-                           <img className='skill-img' src={webpack} alt='Webpack' ></img>
-                           <div>Webpack</div>
-                       </div>
-                       <div>
-                           <img className='skill-img' src={figma} alt='Figma' ></img>
-                           <div>Figma</div>
-                       </div>
-
+                        <div>
+                            <img className='skill-img' src={html5} alt='HTML5' ></img>
+                            <div>HTML5</div>
+                        </div>
+                        <div>
+                            <img className='skill-img' src={css3} alt='CSS3' ></img>
+                            <div>CSS3</div>
+                        </div>
+                        <div>
+                            <img className='skill-img' src={javascript} alt='JavaScript' ></img>
+                            <div>JavaScript</div>
+                        </div>
+                        <div>
+                            <img className='skill-img' src={react} alt='react' ></img>
+                            <div>React</div>
+                        </div>
+                        <div>
+                            <img className='skill-img' src={jsx} alt='jsx' ></img>
+                            <div>JSX</div>
+                        </div>
+                        <div>
+                            <img className='skill-img' src={node} alt='Node' ></img>
+                            <div>Node</div>
+                        </div>
+                        <div>
+                            <img className='skill-img' src={webpack} alt='Webpack' ></img>
+                            <div>Webpack</div>
+                        </div>
+                        <div>
+                            <img className='skill-img' src={figma} alt='Figma' ></img>
+                            <div>Figma</div>
+                        </div>
                    </div>
                </div>
            </div>
@@ -78,11 +73,7 @@ function About() {
             <div className='about-wrapper' >
                 <div className='about'>
                     <div className='header-btn' >
-                        <div className='hidden' ></div>
                         <h2>Über mich</h2>
-                        <a className='btn-cv' href='Lebenslauf.pdf' download='CV_Malte_Lindemann.pdf' target='_blank' >
-                            Lebenslauf laden
-                        </a>
                     </div>
                     <div className='about-text' >
                         Ich heiße Malte und bin 25 Jahre alt. Ich studiere im Master Maschinenbau an der Uni Stuttgart mit einer Vertiefung in der Digitalisierung von Produktionen. 

@@ -28,7 +28,23 @@
     border-bottom: 1px solid #0C1117;
 }
 
+#dark .MenuHmb .CloseHmb img {
+    filter: invert(100%) sepia(3%) saturate(13%) hue-rotate(81deg) brightness(106%) contrast(106%);
+}
+
+#light .MenuHmb .CloseHmb img {
+    filter: invert(5%) sepia(16%) saturate(1264%) hue-rotate(173deg) brightness(93%) contrast(97%);
+}
+
 /* =============== Navbar Styles =============== */
+
+#dark .navbar .hamburger-menu span {
+    border: 3px solid #FFF; 
+}
+
+#light .navbar .hamburger-menu span {
+    border: 3px solid #0C1117; 
+}
 
 #dark nav {
     background-color: #0C1117;
@@ -256,34 +272,22 @@
     background-color: #bccadb;
 }
 
-#dark .input-name {
+#dark .input {
     color: white;
     background-color: #0C1117;
 }
 
-#dark .input-email {
-    color: white;
-    background-color: #0C1117;
+#dark .input::placeholder {
+    color: rgb(255, 255, 255, 0.6);
 }
 
-#dark .input-message {
-    color: white;
-    background-color: #0C1117;
-}
-
-#light .input-name {
+#light .input {
     color: #1b2633;
     background-color: #91a9c5;
 }
 
-#light .input-email {
-    color: #1b2633;
-    background-color: #91a9c5;
-}
-
-#light .input-message {
-    color: #1b2633;
-    background-color: #91a9c5;
+#light .input::placeholder {
+    color: rgb(27, 38, 51, 0.6);
 }
 
 #light .btn-submit {

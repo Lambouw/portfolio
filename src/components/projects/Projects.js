@@ -22,7 +22,7 @@ const Projects = () => {
 
     if (lang === 'eng') {
         return (
-            <div className='projects white' >
+            <div className='projects' >
                 <h2>Projects</h2>
                 <Swiper
                     className='swiper mySwiper'
@@ -41,7 +41,7 @@ const Projects = () => {
                                 <div className='img-wrapper fmmg' >
                                     <div className='description' >
                                         <p>This app randomly generates a FIFA 22 manager career mode mission</p>
-                                        <div className='buttons' >
+                                        <div >
                                             <a href='https://lambouw.github.io/Football-Manager-Mission-Generator' aria-label='site link' target='_blank' ><button className='btn-project' ><img src={site} alt='site' ></img></button></a>
                                             <a href='https://github.com/Lambouw/Football-Manager-Mission-Generator' aria-label='github link' target='_blank' ><button className='btn-project' ><img src={github} alt='github' ></img></button></a>
                                         </div>
@@ -103,7 +103,7 @@ const Projects = () => {
                                 <div className='img-wrapper fmmg' >
                                     <div className='description' >
                                         <p>Diese App generiert eine zufällige Mission für den FIFA 22 Manager Modus</p>
-                                        <div className='buttons' >
+                                        <div >
                                             <a href='https://lambouw.github.io/Football-Manager-Mission-Generator' aria-label='site link' target='_blank' ><button className='btn-project' ><img src={site} alt='site' ></img></button></a>
                                             <a href='https://github.com/Lambouw/Football-Manager-Mission-Generator' aria-label='github link' target='_blank' ><button className='btn-project' ><img src={github} alt='github' ></img></button></a>
                                         </div>

@@ -1,19 +1,18 @@
 /* =============== Basic Styles =============== */
 
-.home {
+.home-wrapper {
     height: 100vh;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+}
+
+.home {
     overflow: auto;
-    padding: 6% 10% 10% 10%;
 }
 
 /* =============== Hero Styles =============== */
 
 .hero {
-    text-align: center;    
+    text-align: center; 
+    margin: auto 0;   
     margin-bottom: 4rem;
 }
 
@@ -24,11 +23,12 @@
     margin-bottom: 4rem;
 }
 
-.description {
-    font-size: 1.875rem;
+.home .description {
+    font-size: 1.8rem;
     line-height: 1.3;
     font-weight: 200;
     letter-spacing: 1.2;
+    text-align: center;
 }
 
 /* =============== Socials Styles =============== */
@@ -50,4 +50,59 @@
 
 .btn-socials:last-child {
     margin-right: 0;
+}
+
+/* =============== 1170px -> xxpx =============== */
+
+@media only screen and ( min-width: 1171px ) {
+    
+    .home {
+        padding: 8rem 8rem 10rem 8rem;
+    }
+}
+
+/* =============== 801px -> 1170px =============== */
+
+@media only screen and ( min-width: 801px ) and ( max-width: 1170px ) {
+    
+    .home {
+        padding: 5rem 4rem 10rem 4rem;
+    }
+}
+
+/* =============== 0px -> 800px =============== */
+
+@media only screen and ( min-width: 0px ) and ( max-width: 800px ) {
+    
+    .home {
+        padding: 5rem 2rem 10rem 2rem;
+    }
+
+    .hero {
+        text-align: center; 
+        margin: auto 0;   
+    }
+    
+    .name {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .home .description {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .btns-socials {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .btn-socials {
+        margin-right: 0rem;
+        margin-bottom: 0.8rem;
+    }
+    
 }
