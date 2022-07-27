@@ -6,6 +6,8 @@
 
 .imprint {    
     overflow: auto;
+    height: 100%;
+
 }
 
 /* =============== Text Styles =============== */

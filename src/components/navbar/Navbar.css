@@ -110,6 +110,7 @@
     .navbar .theme img {
         width: 1.8rem;
         height: 1.8rem;
+        transform: rotate(40deg);
     }
 
     .navbar .theme img:hover {

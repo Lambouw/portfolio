@@ -9,9 +9,9 @@ const ToggleTheme = () => {
     
     let img;
     if (theme === 'dark') {
-        img = <img onClick={() => {toggleTheme()}} src={sun} alt='sun' aria-label='light-mode-switch' ></img>
+        img = <img className='rotate' onClick={() => {toggleTheme()}} src={sun} alt='sun' aria-label='light-mode-switch' ></img>
     } else {
-        img = <img onClick={() => {toggleTheme()}} src={moon} alt='moon' aria-label='dark-mode-switch' ></img>
+        img = <img className='rotate' onClick={() => {toggleTheme()}} src={moon} alt='moon' aria-label='dark-mode-switch' ></img>
     }
 
     return (
