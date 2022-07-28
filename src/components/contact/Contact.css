@@ -3,7 +3,7 @@
 .contact {    
     background-color: #1b2633;
     height: 100vh;
-    overflow: scroll;
+    overflow: auto;
 }
 
 /* =============== Form Styles =============== */

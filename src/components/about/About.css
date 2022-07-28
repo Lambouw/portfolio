@@ -5,8 +5,8 @@
 }
 
 .about {   
-    height: 100%;
-    overflow: scroll;
+    min-height: 100%;
+    overflow: auto;
 }
 
 /* =============== Text Styles =============== */

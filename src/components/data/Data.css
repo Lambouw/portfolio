@@ -6,7 +6,7 @@
 
 .data {    
     height: 100%;
-    overflow: scroll;
+    overflow: auto;
 }
 
 /* =============== Text Styles =============== */
