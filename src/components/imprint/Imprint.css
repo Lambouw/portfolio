@@ -5,7 +5,7 @@
 }
 
 .imprint {    
-    overflow: auto;
+    overflow: scroll;
     height: 100%;
 
 }

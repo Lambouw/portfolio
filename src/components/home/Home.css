@@ -6,7 +6,7 @@
 
 .home {
     height: 100%;
-    overflow: auto;
+    overflow: scroll;
 }
 
 /* =============== Hero Styles =============== */
