@@ -16,6 +16,14 @@
     color: #0C1117;
 }
 
+#light .content {
+    background-color: #1b2633;
+}
+
+#light .content {
+    background-color: #bccadb;
+}
+
 /* =============== Hamburger Menu Styles =============== */
 
 #dark .MenuHmb {
@@ -74,8 +82,6 @@
     cursor: pointer;
     transition: ease-in-out 300ms;
 }
-
-
 
 #dark .btn-contact ,
 #light .btn-contact {

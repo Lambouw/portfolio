@@ -1,8 +1,7 @@
 /* =============== Basic Styles =============== */
 
 .projects {
-    background-color: #1b2633;  
-    height: 100vh;
+    /* height: 100vh; */
     overflow: auto;
 }
 
