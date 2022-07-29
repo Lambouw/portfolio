@@ -16,7 +16,7 @@
     color: #0C1117;
 }
 
-#light .content {
+#dark .content {
     background-color: #1b2633;
 }
 
@@ -297,15 +297,13 @@
 }
 
 #light .btn-submit {
+    color: #0C1117;
     background-color: #f59d0a;
 }
 
 #dark .btn-submit {
+    color: #0C1117;
     background-color: #66D8FF;
-}
-
-#light .btn-submit {
-    background-color: #f59d0a;
 }
 
 #dark .btn-submit:hover {

@@ -5,7 +5,7 @@ import { LangContext } from "../../App";
 import './Contact.css';
 
 function Contact() {
-    const { lang, toggleLang } = useContext(LangContext);
+    const { lang } = useContext(LangContext);
     
     if (lang === 'eng') {
         return (

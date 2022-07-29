@@ -3,8 +3,8 @@ import { NavLink } from 'react-router-dom';
 
 import { LangContext } from "../../App";
 
-import ToggleTheme from '../navbar/ToggleTheme';
-import ToggleLang from '../navbar/ToggleLang.js';
+import ToggleTheme from '../navbar/ToggleTheme.jsx';
+import ToggleLang from '../navbar/ToggleLang.jsx';
 
 import darkX from '../../assets/images/closeDark.svg';
 

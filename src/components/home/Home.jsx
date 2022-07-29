@@ -1,12 +1,11 @@
 import React, { useContext } from "react";
-import { NavLink, Link } from 'react-router-dom';
 
 import './Home.css';
 
-import { ThemeContext, LangContext } from "../../App";
+import { LangContext } from "../../App";
 
 function Home() {
-    const { lang, toggleLang } = useContext(LangContext);
+    const { lang } = useContext(LangContext);
 
     if (lang === 'eng') {
         return (

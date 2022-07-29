@@ -5,7 +5,7 @@ import { LangContext } from "../../App";
 import './Data.css';
 
 const Data = () => {
-    const { lang, toggleLang } = useContext(LangContext);
+    const { lang } = useContext(LangContext);
 
     if (lang === 'eng') {
         return (

@@ -2,8 +2,8 @@ import React, { useContext } from "react";
 import { NavLink } from 'react-router-dom'; 
 
 import { LangContext } from "../../App";
-import ToggleTheme from './ToggleTheme.js';
-import ToggleLang from './ToggleLang.js';
+import ToggleTheme from './ToggleTheme.jsx';
+import ToggleLang from './ToggleLang.jsx';
 
 import './Navbar.css';
 
