@@ -34,14 +34,14 @@ const MenuHmb = () => {
                     </NavLink>
                 </div>
                 <footer>
-                    <div className='toggler' >
+                    {/* <div className='toggler' >
                         <div className='lang' >
                             <ToggleLang />
                         </div>
                         <div>
                             <ToggleTheme />
                         </div>
-                    </div>
+                    </div> */}
                     <div className='imprint-data'>
                         <NavLink to='/portfolio/legal' onClick={closeMenu} >Legal Notice </NavLink> 
                         |
@@ -65,14 +65,14 @@ const MenuHmb = () => {
                     </NavLink>
                 </div>
                 <footer>
-                    <div className='toggler' >
+                    {/* <div className='toggler' >
                         <div className='lang' >
                             <ToggleLang />
                         </div>
                         <div>
                             <ToggleTheme />
                         </div>
-                    </div>
+                    </div> */}
                     <div className='imprint-data'>
                         <NavLink to='/portfolio/legal' onClick={closeMenu} >Impressum </NavLink> 
                         |
